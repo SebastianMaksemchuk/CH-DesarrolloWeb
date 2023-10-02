@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sebastian Maksemchuk">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/icons/favicon-32x32.png" type="image/x-icon">
+    <title>Contacto - Netio SRL</title>
+  </head>
+  <body>
+    <header>
+      <img class="header--banner" src="../assets/images/banner.png" alt="banner publicitario de Netio">
+    </header>
+    <nav class="navH">
+      <a href="../index.html"><img class="navH--logo" src="../assets/icons/logo-netio.png" alt="logo de Netio SRL"></a>
+      <ul class="navH__links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./productos.html">Productos</a></li>
+        <li><a href="./comprar.html">Comprar</a></li>
+        <li><a href="./soporte.html">Soporte</a></li>
+        <li><a class="current" href="./contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <main class="contacto">
+      <h1>Contacto</h1>
+      <section class="datos-contacto">
+        <p>¿Querés comunicarte con nosotros? Podes contactarnos por uno de estos métodos. Estamos de lunes a viernes de 9:00 a 17:00.</p>
+        <ul>
+          <li><div class="bloque-contacto">
+            <img src="../assets/icons/phone.svg" alt="icono telefono">
+            +54 11 4554 9997
+          </div></li>
+          <li><div class="bloque-contacto">
+            <img src="../assets/icons/whatsapp.svg" alt="icono whatsapp">
+            <a href="https://wa.me/541157648371" target="_blank"> +54 11 5764 8371 <br> (comercial)</a>
+          </div></li>
+          <li><div class="bloque-contacto">
+            <img src="../assets/icons/mail.svg" alt="icono email">
+            <div class="contact-list">
+              <a href="mailto:info@netio.com.ar"> info@netio.com.ar</a>
+              <a href="mailto:comercial@netio.com.ar"> comercial@netio.com.ar</a>
+            </div>
+          </div></li>
+          <li><div class="bloque-contacto">
+            <img src="../assets/icons/telegram.svg" alt="icono telegram">
+            +54 11 8765 4321 <br> (soporte técnico)
+          </div></li>
+        </ul>
+      </section>
+      <section>
+        <p>O envianos un mensaje:</p>
+        <div class="formulario">
+          <form method="post" name="formulario-de-contacto">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="text" name="empresa" placeholder="Empresa" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="number" name="telefono" placeholder="Telefono" required>
+            <select name="motivo" id="motivo">
+              <option value="default" selected disabled>Seleccione el motivo de su consulta</option>
+              <option value="consulta-comercial">Consulta comercial</option>
+              <option value="presupuesto">Pedir presupuesto</option>
+              <option value="consulta-tecnica">Consulta técnica</option>
+            </select>
+            <textarea name="mensaje" id="mensaje" placeholder="Mensaje" cols="30" rows="10" required></textarea>
+            <input type="submit" name="enviar" id="boton-enviar">
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__flex">
+        <section>
+          <h4>Netio SRL</h4>
+          <ul>
+            <li><b>Dir:</b> Donado 1045 (Piso 1) <br> (C1427CZE) CABA, Argentina</li>
+            <li><b>Tel:</b> 54 11 4554 9997</li>
+            <li><b>Email:</b> info@netio.com.ar</li>
+          </ul>
+          <br>
+          <h5>Horario de atención:</h5>
+          <p>Lunes a Viernes de 09:00 a 17:00</p>
+        </section>
+        <hr>
+        <section class="footer__flex__social">
+          <h4>Redes Sociales</h4>
+          <ul>
+            <li><a href="https://www.facebook.com/netio.com.ar" target="_blank"><img src="../assets/icons/facebook-nuevo.svg" alt="icono de facebook"></a></li>
+            <li><a href="https://www.instagram.com/netiosrl/" target="_blank"><img src="../assets/icons/instagram.svg" alt="icono de instagram"></a></li>
+            <li><a href="https://www.youtube.com/@netiosrl5506" target="_blank"><img src="../assets/icons/youtube-play.svg" alt="icono de youtube"></a></li>
+          </ul>
+        </section>
+        <hr class="footer__flex--lasthr">
+        <section class="footer__flex__sitemap">
+          <h4>Mapa del sitio</h4>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./comprar.html">Dónde comprar</a></li>
+            <li><a href="./soporte.html">Soporte</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+          </ul>
+        </section>
+      </div>
+    <p class="footer--copyright">© 2023 Netio SRL - Sitio web creado por Sebastian Maksemchuk</p>
+    </footer>
+  </body>
+</html>
