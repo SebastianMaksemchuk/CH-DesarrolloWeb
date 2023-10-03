@@ -327,9 +327,12 @@ footer hr{
   box-shadow: 0 0 15px #000000;
 }
 
-.soporte .vetti p, .soporte .vetti a {
-  display: block;
+.soporte .vetti {
   text-align: center;
+}
+
+.soporte .vetti a {
+  display: inline-block;
 }
 
 .descargas ul {
