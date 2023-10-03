@@ -73,7 +73,7 @@ header {
 }
 
 .navH__links {
-  min-width: 75%;
+  min-width: auto;
   height: auto;
   background: transparent;
   text-align: end;
@@ -137,6 +137,52 @@ header {
 .navH__links__dropdown-menu a:active {
   background: #993333;
   color: #eeeeee;
+}
+
+.navV {
+  display: none;
+  margin: 1.5%
+}
+
+.navV button,.navV button:focus  {
+  background: #eeeeee;
+  box-shadow: 0 0 10px #993333;
+}
+
+.navV--toggler {
+  filter: invert(25%) sepia(21%) saturate(1686%) hue-rotate(313deg) brightness(113%) contrast(105%);
+}
+
+.navV__container {
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+  background-color: #eeeeee;
+  border-radius: 2.5%;
+  box-shadow: 0 0 10px #993333;
+}
+
+.navV .nav-link {
+  font-size: 1.25rem;
+  padding: 0.25rem 1em;
+  text-transform: uppercase;
+}
+
+.navV .nav-link {
+  font-size: 1.25rem;
+  padding: 0.25rem 1em;
+  text-transform: uppercase;
+}
+
+.navV .sublink {
+  font-size: 1rem;
+  margin-left: 2rem;
+  text-transform: none;
+}
+
+.navV .current {
+  color: #993333;
+  font-weight: bold;
 }
 
 /* footer */
@@ -422,12 +468,12 @@ footer hr{
 
   /* navegacion */
 
-  /* .navH {
+  .navH {
     display: none;
-  } */
-  
-  .navH__links a {
-    display: inline-block;
+  }
+
+  .navV {
+    display: block;
   }
 
   /* footer */
