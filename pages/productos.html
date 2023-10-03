@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sebastian Maksemchuk">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../assets/icons/favicon-32x32.png" type="image/x-icon">
     <title>Productos - Netio SRL</title>
@@ -15,11 +16,26 @@
     <nav class="navH">
       <a href="../index.html"><img class="navH--logo" src="../assets/icons/logo-netio.png" alt="logo de Netio SRL"></a>
       <ul class="navH__links">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a class="current" href="./productos.html">Productos</a></li>
-        <li><a href="./comprar.html">Comprar</a></li>
-        <li><a href="./soporte.html">Soporte</a></li>
-        <li><a href="./contacto.html">Contacto</a></li>
+        <li><button type="button" class="btn" ><a tabindex="-1" href="../index.html">Inicio</a></button></li>
+        <li><div class="btn-group">
+          <button type="button" class="btn current"><a tabindex="-1" href="./productos.html">Productos</a></button>
+          <button type="button" class="btn dropdown-toggle dropdown-toggle-split navH__links--dropdown-toggle" data-bs-toggle="dropdown"><span class="visually-hidden">Toggle Dropdown</span></button>
+          <ul class="dropdown-menu dropdown-menu-end navH__links__dropdown-menu">
+          <li><a class="dropdown-item" href="./productos.html#comunicadores">Comunicadores</a></li>
+          <li><a class="dropdown-item" href="./productos.html#vetti">Vetti</a></li>
+          <li><a class="dropdown-item" href="./productos.html#accesorios">Accesorios</a></li>
+          </ul>
+        </div></li>
+        <li><button type="button" class="btn"><a tabindex="-1" href="./comprar.html">Comprar</a></button></li>
+        <li><div class="btn-group">
+          <button type="button" class="btn"><a tabindex="-1" href="./soporte.html">Soporte</a></button>
+          <button type="button" class="btn dropdown-toggle dropdown-toggle-split navH__links--dropdown-toggle" data-bs-toggle="dropdown"><span class="visually-hidden">Toggle Dropdown</span></button>
+          <ul class="dropdown-menu dropdown-menu-end navH__links__dropdown-menu">
+          <li><a class="dropdown-item" href="./soporte.html#manuales">Manuales</a></li>
+          <li><a class="dropdown-item" href="./soporte.html#descargas">Accesorios</a></li>
+          </ul>
+        </div></li>
+        <li><button type="button" class="btn"><a tabindex="-1" href="./contacto.html">Contacto</a></button></li>
       </ul>
     </nav>
     <main class="productos">
@@ -82,7 +98,7 @@
           </div>
         </div>
       </section> <!-- /vetti -->
-      <section> <!-- accesorios -->
+      <section id="accesorios"> <!-- accesorios -->
         <h3>Accesorios</h3>
         <div class="galeria-de-productos">
           <div class="producto-seleccionado">
@@ -143,5 +159,6 @@
       </div>
     <p class="footer--copyright">© 2023 Netio SRL - Sitio web creado por Sebastian Maksemchuk</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>

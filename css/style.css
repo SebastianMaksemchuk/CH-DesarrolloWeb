@@ -10,6 +10,8 @@
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -17,10 +19,22 @@ body {
   background: #eeeeee url('./images/bg01.png');
 }
 
-h1, h2, h3 {
-  color: #663333;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
   text-align: center;
   margin: 1rem 0;
+}
+
+h1, h2, h3 {
+  color: #663333;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1rem;
 }
 
 a:hover {
@@ -48,6 +62,7 @@ header {
   background: linear-gradient(#993333, #eeeeee00);
   display: flex;
   width: 100%;
+  height: auto;
   justify-content: space-between;
   align-items: center;
   z-index: 1;
@@ -59,6 +74,7 @@ header {
 
 .navH__links {
   min-width: 75%;
+  height: auto;
   background: transparent;
   text-align: end;
 }
@@ -67,33 +83,61 @@ header {
   display: inline;
 }
 
-.navH__links a {
-  margin: 0.25rem;
+.navH__links button {
+  margin: 0.25rem 0;
   border: 2px #993333 solid;
   border-radius: 3px;
   padding: 0.25rem;
   background: #eeeeee;
-  color: #5b5b5b;
+  --bs-btn-color: #5b5b5b;
+  --bs-btn-hover-bg: #5b5b5b;
+  --bs-btn-hover-border-color: #993333;
+  --bs-btn-hover-color: #eeeeee;
+  --bs-btn-active-bg: #993333;
+  --bs-btn-active-color: #eeeeee;
+  --bs-btn-active-border-color: #993333;
+}
+
+.navH__links a {
+  color: inherit;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.navH__links a:hover {
+.navH__links .current {
+  background: #993333;
+}
+
+.navH__links .current a {
+  color: #eeeeee;
+}
+
+.navH__links .current:focus-visible {
   background: #5b5b5b;
   color: #eeeeee;
 }
 
-.navH__links a:active {
+.navH__links--dropdown-toggle {
+  --bs-btn-active-bg: #5b5b5b;
+}
+
+.navH__links__dropdown-menu {
+  background: #eeeeee;
+  box-shadow: 0 0 10px #993333;
+  color: #5b5b5b;
+}
+
+.navH__links__dropdown-menu a:hover, .navH__links__dropdown-menu a:focus {
+  background: #5b5b5b;
+  color: #eeeeee;
+  outline: none;
+}
+
+.navH__links__dropdown-menu a:active {
   background: #993333;
   color: #eeeeee;
 }
-
-.navH__links .current {
-  background: #993333;
-  color: #eeeeee;
-}
-
 
 /* footer */
 
@@ -193,7 +237,6 @@ footer hr{
   font-size: 24px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 1em;
 }
 
 .index section a {
