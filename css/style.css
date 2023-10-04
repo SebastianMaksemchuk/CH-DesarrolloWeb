@@ -417,11 +417,19 @@ footer hr{
   margin: 1rem 2.5%;
 }
 
-.datos-contacto ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.contacto__medios {
+  display: grid;
+  row-gap: 2rem;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "tel mail whatsapp telegram";
 }
+
+.ctel {grid-area: tel;}
+.cwhatsapp {grid-area: whatsapp;}
+.cmail {grid-area: mail;}
+.ctelegram {grid-area: telegram;}
+
 
 .bloque-contacto {
   display: flex;
@@ -464,6 +472,14 @@ footer hr{
 
   .manuales a {
     max-width: 200px;
+  }
+
+  /* contacto */
+
+  .contacto__medios {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "tel whatsapp" "mail telegram";
   }
 }
 
@@ -512,5 +528,13 @@ footer hr{
     position: static;
     width: 50%;
     min-width: 150px;
+  }
+
+  /* contacto */
+
+  .contacto__medios {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "tel" "mail" "whatsapp" "telegram";
   }
 }
