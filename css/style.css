@@ -467,9 +467,6 @@ footer hr{
   border: #000000 solid 1px;
 }
 
-#contact-form form button {
-}
-
 /* media queries */
 
 @media (max-width: 62em) {
