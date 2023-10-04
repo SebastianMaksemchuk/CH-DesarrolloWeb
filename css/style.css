@@ -65,7 +65,7 @@ header {
   height: auto;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  z-index: 3;
 }
 
 .navH--logo {
@@ -141,7 +141,8 @@ header {
 
 .navV {
   display: none;
-  margin: 1.5%
+  margin: 1.5%;
+  width: fit-content;
 }
 
 .navV button,.navV button:focus  {
@@ -445,6 +446,28 @@ footer hr{
 .contact-list {
   display: flex;
   flex-direction: column;
+}
+
+#contact-form {
+  padding: 2rem 10% ;
+}
+
+#contact-form p {
+  text-align: left;
+}
+
+#contact-form form input, .contacto form select {
+  max-width: 20rem;
+  border: #000000 solid 1px;
+}
+
+#contact-form form #mensaje {
+  max-width: 40rem;
+  height: 10rem;
+  border: #000000 solid 1px;
+}
+
+#contact-form form button {
 }
 
 /* media queries */

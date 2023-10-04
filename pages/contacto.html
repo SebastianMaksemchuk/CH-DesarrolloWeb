@@ -83,24 +83,37 @@
           </div>
         </div>
       </section>
-      <section> <!-- formulario -->
+      <section id="contact-form"> <!-- formulario de contacto -->
         <p>O envianos un mensaje:</p>
-        <div class="formulario">
-          <form method="post" name="formulario-de-contacto">
-            <input type="text" name="nombre" placeholder="Nombre" required>
-            <input type="text" name="empresa" placeholder="Empresa" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="number" name="telefono" placeholder="Telefono" required>
-            <select name="motivo" id="motivo">
-              <option value="default" selected disabled>Seleccione el motivo de su consulta</option>
-              <option value="consulta-comercial">Consulta comercial</option>
-              <option value="presupuesto">Pedir presupuesto</option>
-              <option value="consulta-tecnica">Consulta técnica</option>
-            </select>
-            <textarea name="mensaje" id="mensaje" placeholder="Mensaje" cols="30" rows="10" required></textarea>
-            <input type="submit" name="enviar" id="boton-enviar">
-          </form>
-        </div>
+        <form method="post" name="formulario-de-contacto">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="form-nombre" placeholder="Nombre" required>
+            <label for="form-nombre">Nombre</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="form-empresa" placeholder="Empresa" required>
+            <label for="form-empresa">Empresa</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="form-email" placeholder="Email" required>
+            <label for="form-email">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="form-telefono" placeholder="Teléfono" required>
+            <label for="form-telefono">Teléfono</label>
+          </div>
+          <select class="form-select mb-3" name="motivo" id="motivo">
+            <option value="default" selected disabled>Seleccione el motivo de su consulta</option>
+            <option value="consulta-comercial">Consulta comercial</option>
+            <option value="presupuesto">Pedir presupuesto</option>
+            <option value="consulta-tecnica">Consulta técnica</option>
+          </select>
+          <div class="form-floating mb-3">
+            <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Mensaje" required></textarea>
+            <label for="mensaje">Mensaje</label>
+          </div>
+          <button type="submit" class="btn btn-secondary">Enviar</button>
+        </form>
       </section>
     </main>
     <footer>
