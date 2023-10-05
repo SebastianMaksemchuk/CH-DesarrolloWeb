@@ -118,23 +118,23 @@ header {
   color: #eeeeee;
 }
 
-.navH__links--dropdown-toggle {
+.navH__links--dropdownToggle {
   --bs-btn-active-bg: #5b5b5b;
 }
 
-.navH__links__dropdown-menu {
+.navH__links__dropdownMenu {
   background: #eeeeee;
   box-shadow: 0 0 10px #993333;
   color: #5b5b5b;
 }
 
-.navH__links__dropdown-menu a:hover, .navH__links__dropdown-menu a:focus {
+.navH__links__dropdownMenu a:hover, .navH__links__dropdownMenu a:focus {
   background: #5b5b5b;
   color: #eeeeee;
   outline: none;
 }
 
-.navH__links__dropdown-menu a:active {
+.navH__links__dropdownMenu a:active {
   background: #993333;
   color: #eeeeee;
 }
@@ -145,7 +145,7 @@ header {
   width: fit-content;
 }
 
-.navV button,.navV button:focus  {
+.navV button, .navV button:focus  {
   background: #eeeeee;
   box-shadow: 0 0 10px #993333;
 }
@@ -163,19 +163,13 @@ header {
   box-shadow: 0 0 10px #993333;
 }
 
-.navV .nav-link {
+.navV--mainlink {
   font-size: 1.25rem;
   padding: 0.25rem 1em;
   text-transform: uppercase;
 }
 
-.navV .nav-link {
-  font-size: 1.25rem;
-  padding: 0.25rem 1em;
-  text-transform: uppercase;
-}
-
-.navV .sublink {
+.navV--sublink {
   font-size: 1rem;
   margin-left: 2rem;
   text-transform: none;
@@ -308,7 +302,7 @@ footer hr{
   text-align: center;
 }
 
-.productos__galeria, .soporte section div {
+.productos__galeria, .soporte__manuales {
   background: #b37070c0;
   width: 90%;
   height: auto;
@@ -324,7 +318,7 @@ footer hr{
 }
 
 .productos__galeria__item {
-  max-width: 300px;
+  max-width: 280px;
   background: #e0e0e0;
   padding: 1rem;
   border-radius: 8px;
@@ -341,35 +335,35 @@ footer hr{
   margin: 1rem 5% 2rem 5%;
 }
 
-.manuales a {
+.soporte__manuales a {
   max-width: 300px;
   height: auto;
 }
 
-.manuales a img {
+.soporte__manuales a img {
   width: 100%;
   height: auto;
 }
 
-.manuales a img:hover {
+.soporte__manuales a img:hover {
   box-shadow: 0 0 15px #000000;
 }
 
-.soporte .vetti a {
+.soporte__vetti a {
   display: inline-block;
 }
 
-.descargas ul {
+.soporte__descargas ul {
   margin: 0 0 0 10%;
 }
 
-.descargas li {
+.soporte__descargas li {
   text-align: start;
   list-style: circle;
   margin: 0.5em 0;
 }
 
-.appstores li {
+.soporte__descargas__appstores li {
   display: inline-block;
   list-style: none;
   margin: 0.5em;
@@ -382,7 +376,7 @@ footer hr{
   margin-bottom: 2em;
 }
 
-.distribuidores {
+.comprar__distribuidores {
   margin: 2%;
   display: flex;
   justify-content: space-around;
@@ -391,7 +385,7 @@ footer hr{
   flex-wrap: wrap;
 }
 
-.empresa {
+.comprar__distribuidores__empresa {
   width: 200px;
   max-height: auto;
   overflow: hidden;
@@ -406,28 +400,28 @@ footer hr{
   "bandera ciudad mapa";
 }
 
-.logo {
+.comprar__distribuidores__empresa--logo {
   grid-area: logo;
 }
 
-.bandera {
+.comprar__distribuidores__empresa--bandera {
   grid-area: bandera;
   width: 2rem;
   height: auto;
 }
 
-.ciudad {
+.comprar__distribuidores__empresa--ciudad {
   grid-area: ciudad;
 }
 
-.mapa {
+.comprar__distribuidores__empresa--mapa {
   grid-area: mapa;
   width: 1rem;
   height: auto;
   justify-self: self-end;
 }
 
-.mapa-ubicacion {
+.comprar--mapaUbicacion {
   width: 100%;
   height: 30rem;
 }
@@ -514,7 +508,7 @@ footer hr{
 
   /* soporte */
 
-  .manuales a {
+  .soporte__manuales a {
     max-width: 200px;
   }
 
