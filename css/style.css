@@ -72,13 +72,6 @@ header {
   width: 40px;
 }
 
-.navH__links {
-  min-width: auto;
-  height: auto;
-  background: transparent;
-  text-align: end;
-}
-
 .navH__links li {
   display: inline;
 }
@@ -107,19 +100,12 @@ header {
 
 .navH__links .current {
   background: #993333;
-}
-
-.navH__links .current a {
   color: #eeeeee;
 }
 
 .navH__links .current:focus-visible {
   background: #5b5b5b;
   color: #eeeeee;
-}
-
-.navH__links--dropdownToggle {
-  --bs-btn-active-bg: #5b5b5b;
 }
 
 .navH__links__dropdownMenu {
@@ -145,14 +131,14 @@ header {
   width: fit-content;
 }
 
-.navV button, .navV button:focus  {
+.navV button, .navV button:focus {
   background: #eeeeee;
   box-shadow: 0 0 10px #993333;
 }
 
 .navV--toggler {
   filter: invert(25%) sepia(21%) saturate(1686%) hue-rotate(313deg) brightness(113%) contrast(105%);
-}
+} /* Esto es para cambiarle el color al svg */
 
 .navV__container {
   position: relative;
@@ -198,19 +184,13 @@ footer h5, footer p {
   margin: 0;
 }
 
-footer hr{
+footer hr {
   border: 1px solid #696969;
   max-width: 95%;
   margin: 0 2.5%;
 }
 
-.footer__flex {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.footer__flex__social ul {
+.footer__flex, .footer__flex__social ul {
   display: flex;
   justify-content: space-around;
 }
@@ -246,7 +226,7 @@ footer hr{
   box-shadow: 0 0 5px #00000099;
 }
 
-.index section:nth-child(odd of section)  {
+.index section:nth-child(odd of section) {
   margin-right: 5%;
   border-end-end-radius: 5px;
 }
@@ -289,14 +269,14 @@ footer hr{
   align-self: flex-end;
 }
 
-.index hr{
+.index hr {
   border: 1px solid #696969;
   max-width: 95%;
   margin: auto;
 }
 
 
-/* soporte / productos*/
+/* productos / soporte */
 
 .productos, .soporte {
   text-align: center;
@@ -371,7 +351,7 @@ footer hr{
 
 /* Comprar */
 
-.comprar p{
+.comprar p {
   text-align: center;
   margin-bottom: 2em;
 }
@@ -395,9 +375,9 @@ footer hr{
   align-items: center;
   grid-template-columns: 2.5rem 1fr 1.5rem;
   grid-template-rows: 1fr 3rem;
-  grid-template-areas: 
-  "logo logo logo"
-  "bandera ciudad mapa";
+  grid-template-areas:
+    "logo logo logo"
+    "bandera ciudad mapa";
 }
 
 .comprar__distribuidores__empresa--logo {
@@ -426,6 +406,7 @@ footer hr{
   height: 30rem;
 }
 
+
 /* contacto */
 
 .contacto {
@@ -444,11 +425,21 @@ footer hr{
   grid-template-areas: "tel mail whatsapp telegram";
 }
 
-.ctel {grid-area: tel;}
-.cwhatsapp {grid-area: whatsapp;}
-.cmail {grid-area: mail;}
-.ctelegram {grid-area: telegram;}
+.ctel {
+  grid-area: tel;
+}
 
+.cwhatsapp {
+  grid-area: whatsapp;
+}
+
+.cmail {
+  grid-area: mail;
+}
+
+.ctelegram {
+  grid-area: telegram;
+}
 
 .bloque-contacto {
   display: flex;
@@ -457,7 +448,7 @@ footer hr{
   gap: 1rem;
 }
 
-.bloque-contacto img{
+.bloque-contacto img {
   width: 3rem;
 }
 
@@ -467,7 +458,7 @@ footer hr{
 }
 
 #contact-form {
-  padding: 2rem 10% ;
+  padding: 2rem 10%;
 }
 
 #contact-form p {
@@ -485,10 +476,11 @@ footer hr{
   border: #000000 solid 1px;
 }
 
+
 /* media queries */
 
 @media (max-width: 62em) {
-  
+
   /* navegacion */
 
   .navH {
@@ -520,6 +512,7 @@ footer hr{
     grid-template-areas: "tel whatsapp" "mail telegram";
   }
 }
+
 
 @media (max-width: 36em) {
 
@@ -553,10 +546,10 @@ footer hr{
   .index section:nth-child(n of section) {
     flex-direction: column;
     align-items: center;
-    width: 95%;
+    width: 90%;
     margin-top: 2rem;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    margin-left: 5%;
+    margin-right: 5%;
     border-radius: 5px;
     text-align: center;
   }
