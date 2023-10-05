@@ -189,15 +189,19 @@ header {
 /* footer */
 
 footer {
-  padding: 1rem;
+  padding: 0 1rem;
   background: #202020;
   color: #e0e0e0;
   text-align: center;
 }
 
 footer h4 {
-  margin-bottom: 1em;
+  margin: 0.5rem 0;
   text-decoration: underline;
+}
+
+footer h5, footer p {
+  margin: 0;
 }
 
 footer hr{
@@ -226,7 +230,7 @@ footer hr{
 }
 
 .footer--copyright {
-  margin-top: 1rem;
+  margin: 0.5rem 0 0 0;
 }
 
 
@@ -297,9 +301,14 @@ footer hr{
   margin: auto;
 }
 
-/* Soporte */
 
-.soporte section div {
+/* soporte / productos*/
+
+.productos, .soporte {
+  text-align: center;
+}
+
+.productos__galeria, .soporte section div {
   background: #b37070c0;
   width: 90%;
   height: auto;
@@ -312,6 +321,24 @@ footer hr{
   gap: 1.5rem;
   flex-wrap: wrap;
   box-shadow: 0 0 5px #00000099;
+}
+
+.productos__galeria__item {
+  max-width: 300px;
+  background: #e0e0e0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #000000;
+}
+
+.productos__galeria__item:hover {
+  box-shadow: 0 0 15px #993333;
+}
+
+#vetti {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 5% 2rem 5%;
 }
 
 .manuales a {
@@ -328,10 +355,6 @@ footer hr{
   box-shadow: 0 0 15px #000000;
 }
 
-.soporte .vetti {
-  text-align: center;
-}
-
 .soporte .vetti a {
   display: inline-block;
 }
@@ -341,6 +364,7 @@ footer hr{
 }
 
 .descargas li {
+  text-align: start;
   list-style: circle;
   margin: 0.5em 0;
 }

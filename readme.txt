@@ -7,4 +7,4 @@ Notas para la segunda pre entrega
 
 Sobre las navbar: Como ya tenía hecha la barra de navegación para desktop antes de que veamos bootstrap, y por el momento no quise rehacerla por completo, lo que hice fue usar media queries para ocultarla y mostrar otra navbar tipo menú hamburguesa para la vista mobile.
 Para la maquetación usé flexbox principalmente y algo de grids.
-Utilizé bootstrap para los desplegables del menú de navegación desktop, el menú de navegación mobile y el formulario de contacto.
+Utilizé bootstrap para los botonoes y desplegables del menú de navegación desktop, el menú de navegación mobile y el formulario de contacto.
