@@ -1,0 +1,9 @@
+%main-container {
+  @include flex ($justify: space-around, $align: center, $grow: 0, $wrap:wrap, $gap: 1.5rem);
+  @include boxshadow (5px, $cl-sombras);
+  @include size (90%, auto);
+  background: $cl-contenedor;
+  margin: 1rem 5% 2rem 5%;
+  border-radius: 5px;
+  padding: 1.5rem;
+}

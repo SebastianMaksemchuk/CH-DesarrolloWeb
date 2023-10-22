@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: $font-g;
+}
+
+body {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: $font-p;
+}
+
+a {
+  font-family: $font-a;
+}
+
+a:hover {
+  text-decoration: none;
+}

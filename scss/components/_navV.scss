@@ -1,0 +1,45 @@
+.navV {
+  display: block;
+  margin-left: auto;
+  @include size (fit-content);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  button {
+    background: $cl-claro;
+    @include boxshadow (10px, $cl-principal);
+    &:focus {
+      background: $cl-claro;
+      @include boxshadow (10px, $cl-principal);
+      outline: none;
+    }
+    .navV--toggler {
+      filter: invert(25%) sepia(21%) saturate(1686%) hue-rotate(313deg) brightness(113%) contrast(105%);
+    }
+  }
+  .navV__container {
+    position: relative;
+    z-index: 1;
+    @include size (fit-content);
+    background-color: $cl-claro;
+    border-radius: 2.5%;
+    @include boxshadow (10px, $cl-principal);
+    .navV--mainlink {
+      font-size: 1.25rem;
+      padding: 0.25rem 1em;
+      text-transform: uppercase;
+      text-align: start;
+    }
+    .navV--sublink {
+      font-size: 1rem;
+      margin-left: 2rem;
+      text-transform: none;
+      text-align: start;
+    }
+    .current {
+      color: $cl-principal;
+      font-weight: bold;
+    }
+  }
+}

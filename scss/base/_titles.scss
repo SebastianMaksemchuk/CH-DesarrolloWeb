@@ -1,0 +1,36 @@
+%h {
+  font-family: $font-h;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+@mixin titles ($size, $color) {
+  @extend %h;
+  font-size: $size;
+  color: $color;
+}
+
+h1 {
+  @include titles (2.5rem, $cl-titulos)
+}
+
+h2 {
+  @include titles (2rem, $cl-titulos)
+}
+
+h3 {
+  @include titles (1.5rem, $cl-titulos)
+}
+
+h4 {
+  @include titles (1.25rem, $cl-subtitulos)
+}
+
+h5 {
+  @include titles (1rem, $cl-claro)
+}
+
+h6 {
+  @include titles (0.8rem, $cl-claro)
+}

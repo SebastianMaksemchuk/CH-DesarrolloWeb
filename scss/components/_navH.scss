@@ -1,0 +1,64 @@
+.navH {
+  @include flex ($justify: space-between, $align: center);
+  @include size (100%);
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  padding: 0.5rem;
+  background: linear-gradient($cl-principal, transparentize($cl-body, 1));
+  .navH--logo {
+    @include size (40px);
+  }
+  .navH__links {
+    @mixin color ($fondo, $texto, $borde: $cl-btn-borde) {
+      background: $fondo;
+      color: $texto;
+      border-color: $borde;
+    }
+    li {
+      display: inline;
+      button {
+        margin: 0.25rem 0;
+        border: 2px $cl-principal solid;
+        border-radius: 3px;
+        padding: 0.25rem;
+        @include color ($cl-btn-fondo, $cl-btn-texto);
+        &:hover, &:focus-visible {
+          @include color ($cl-btn-fondo-hover, $cl-btn-texto-hover);
+        }
+        &:active {
+          @include color ($cl-btn-fondo-active, $cl-btn-texto-active);
+        }
+        a {
+          color: inherit;
+          font-weight: 700;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+      .current {
+        @include color ($cl-btn-fondo-active, $cl-btn-texto-active);
+        &:focus-visible {
+          @include color ($cl-btn-fondo-hover, $cl-btn-texto-hover);
+        }
+      }
+    }
+    .navH__links__dropdownMenu {
+      
+      background: $cl-claro;
+      color: $cl-oscuro;
+      @include boxshadow (10px, #993333);
+      a {
+        @include color ($cl-btn-fondo, $cl-btn-texto);
+        font-weight: bold;
+        &:hover, &:focus {
+          @include color ($cl-btn-fondo-hover, $cl-btn-texto-hover);
+          outline: none;
+        }
+        &:active {
+          @include color ($cl-btn-fondo-active, $cl-btn-texto-active);
+        }
+      }
+    }
+  }
+}

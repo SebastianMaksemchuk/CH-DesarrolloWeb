@@ -1,0 +1,23 @@
+// variables
+@import './variables/colors';
+@import './variables/fonts';
+// base
+@import './base/reset';
+@import './base/utils';
+@import './base/titles';
+@import './base/lines';
+// layouts
+@import './layouts/header';
+@import './layouts/body';
+@import './layouts/footer';
+// components
+@import './components/banner';
+@import './components/navH';
+@import './components/navV';
+@import './components/containers';
+// page specifics
+@import './specifics/index';
+@import './specifics/productos';
+@import './specifics/comprar';
+@import './specifics/soporte';
+@import './specifics/contacto';
