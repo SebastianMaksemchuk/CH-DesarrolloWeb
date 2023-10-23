@@ -284,6 +284,9 @@ footer .footer--copyright {
   padding: 1.5rem;
 }
 
+.index {
+  overflow-x: hidden;
+}
 .index section {
   justify-content: space-between;
   flex-wrap: nowrap;
