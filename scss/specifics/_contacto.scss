@@ -1,6 +1,6 @@
 .contacto {
   section {
-    margin: 1rem 2.5%;
+    margin: 2rem 2.5%;
   }
   .contacto__medios {
     @include grid ($rows: repeat(1, 1fr), $columns: repeat(4, 1fr), $gap: 2rem);
@@ -36,12 +36,14 @@
     }
   }
   #contact-form {
+    @extend %main-container;
+    display: block;
     p {
       text-align: left;
     }
     form {
+      text-align: right;
       input, select, #mensaje {
-        @include size ($maxw: 20rem);
         text-align: left;
         border: $cl-textos solid 1px;
         option {
@@ -49,7 +51,7 @@
         }
       }
       #mensaje {
-        @include size ($h: 10rem, $maxw: 40rem)
+        @include size ($h: 10rem,)
       }
     }
   }
