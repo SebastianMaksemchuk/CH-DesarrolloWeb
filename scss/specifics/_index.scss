@@ -6,6 +6,7 @@
     flex-wrap: nowrap;
     @include size (95%);
     margin: 5rem 0 2rem 0;
+    overflow: visible;
     @media (max-width: 62em) {
       margin: 2rem 0 2rem 0;
     }
@@ -31,8 +32,7 @@
       @include size (25%, auto);
       align-self: flex-start;
       border-radius: 8px;
-      position: relative;
-      bottom: 5rem;
+      transform: translateY(-5rem);
       @media (max-width: 62em) {
         position: static;
         align-self: center;

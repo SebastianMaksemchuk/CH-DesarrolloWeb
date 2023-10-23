@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-
 * {
   margin: 0;
   border: 0;
@@ -288,6 +287,7 @@ footer .footer--copyright {
   margin: 1rem 5% 2rem 5%;
   border-radius: 5px;
   padding: 1.5rem;
+  overflow: hidden;
 }
 
 .index {
@@ -298,6 +298,7 @@ footer .footer--copyright {
   flex-wrap: nowrap;
   width: 95%;
   margin: 5rem 0 2rem 0;
+  overflow: visible;
 }
 @media (max-width: 62em) {
   .index section {
@@ -329,8 +330,7 @@ footer .footer--copyright {
   height: auto;
   align-self: flex-start;
   border-radius: 8px;
-  position: relative;
-  bottom: 5rem;
+  transform: translateY(-5rem);
 }
 @media (max-width: 62em) {
   .index section img {
