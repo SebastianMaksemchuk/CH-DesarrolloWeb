@@ -46,8 +46,11 @@
       input, select, #mensaje {
         text-align: left;
         border: $cl-textos solid 1px;
+        text-overflow: ellipsis;
         option {
           text-align: inherit;
+          font-size: inherit;
+          text-overflow: ellipsis;
         }
       }
       #mensaje {

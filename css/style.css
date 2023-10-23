@@ -31,10 +31,6 @@ a:hover {
   text-decoration: none;
 }
 
-.aos-init[data-aos][data-aos].aos-animate {
-  transform: unset;
-}
-
 @media (min-width: 0em) and (max-width: 36em) {
   .sm-invisible {
     display: none !important;
@@ -234,6 +230,7 @@ footer .footer--copyright {
   position: fixed;
   top: 0;
   left: 50%;
+  z-index: 3;
   transform: translateX(-50%);
 }
 .navV button {
@@ -250,7 +247,6 @@ footer .footer--copyright {
 }
 .navV .navV__container {
   position: relative;
-  z-index: 1;
   width: fit-content;
   background-color: #eeeeee;
   border-radius: 2.5%;
@@ -537,9 +533,12 @@ footer .footer--copyright {
 .contacto #contact-form form input, .contacto #contact-form form select, .contacto #contact-form form #mensaje {
   text-align: left;
   border: #000000 solid 1px;
+  text-overflow: ellipsis;
 }
 .contacto #contact-form form input option, .contacto #contact-form form select option, .contacto #contact-form form #mensaje option {
   text-align: inherit;
+  font-size: inherit;
+  text-overflow: ellipsis;
 }
 .contacto #contact-form form #mensaje {
   height: 10rem;

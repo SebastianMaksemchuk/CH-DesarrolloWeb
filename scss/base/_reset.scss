@@ -29,9 +29,3 @@ a {
 a:hover {
   text-decoration: none;
 }
-
-// fix para evitar superposición de las animaciones de AOS con el menú desplegable de bootstrap:
-
-.aos-init[data-aos][data-aos].aos-animate {
-  transform: unset;
-}

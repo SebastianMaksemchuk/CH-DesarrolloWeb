@@ -5,6 +5,7 @@
   position: fixed;
   top: 0;
   left: 50%;
+  z-index: 3;
   transform: translateX(-50%);
   button {
     background: $cl-claro;
@@ -20,7 +21,6 @@
   }
   .navV__container {
     position: relative;
-    z-index: 1;
     @include size (fit-content);
     background-color: $cl-claro;
     border-radius: 2.5%;
