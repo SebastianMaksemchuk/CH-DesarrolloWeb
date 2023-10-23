@@ -3,7 +3,7 @@ GitHub pages: https://sebastianmaksemchuk.github.io/CH-DesarrolloWeb/
 
 # Información del proyecto.
 
-La idea de este proyecto es hacer una revisión del sitio web de la empresa en la que trabajo (y me pagó el curso).
+La idea de este proyecto es hacer una revisión del sitio web de la empresa en la que trabajo.
 
 # Notas para la tercer pre-entrega:
 
