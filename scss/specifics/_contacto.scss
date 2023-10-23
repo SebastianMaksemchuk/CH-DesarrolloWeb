@@ -1,0 +1,58 @@
+.contacto {
+  section {
+    margin: 2rem 2.5%;
+  }
+  .contacto__medios {
+    @include grid ($rows: repeat(1, 1fr), $columns: repeat(4, 1fr), $gap: 2rem);
+    grid-template-areas: "tel mail whatsapp telegram";
+    @media (max-width: 62em) {
+      @include grid ($rows: repeat(2, 1fr), $columns: repeat(2, 1fr), $gap: 2rem);
+      grid-template-areas: "tel whatsapp" "mail telegram";
+    }
+    @media (max-width: 36em) {
+      @include grid ($rows: repeat(4, 1fr), $columns: repeat(1, 1fr), $gap: 2rem);
+      grid-template-areas: "tel" "mail" "whatsapp" "telegram"
+    }
+    .ctel {
+      grid-area: tel;
+    }
+    .cwhatsapp {
+      grid-area: whatsapp;
+    }
+    .cmail {
+      grid-area: mail;
+    }
+    .ctelegram {
+      grid-area: telegram;
+    }
+    .bloque-contacto {
+      @include flex ($justify: center, $align: center, $gap: 1rem);
+      img {
+        @include size (3rem)
+      }
+      .contact-list {
+        @include flex ($direction: column);
+      }
+    }
+  }
+  #contact-form {
+    @extend %main-container;
+    display: block;
+    p {
+      text-align: left;
+    }
+    form {
+      text-align: right;
+      input, select, #mensaje {
+        text-align: left;
+        border: $cl-textos solid 1px;
+        option {
+          text-align: inherit;
+        }
+      }
+      #mensaje {
+        @include size ($h: 10rem,)
+      }
+    }
+  }
+}

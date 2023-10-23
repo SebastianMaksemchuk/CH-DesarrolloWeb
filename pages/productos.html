@@ -4,56 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sebastian Maksemchuk">
+    <meta name="description" content="Galería de productos comunicadores Netio, panel de alarma inalámbrico Vetti y accesorios">
+    <meta name="keywords" content="comunicador para alarma, Netio, NT-Link, ntlink, Nt-com, ntcom, antena gsm, cable de programación, Vetti, panel inalámbrico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../assets/icons/favicon-32x32.png" type="image/x-icon">
     <title>Productos - Netio SRL</title>
   </head>
   <body>
-    <header>
-      <img class="header--banner" src="../assets/images/banner.png" alt="banner publicitario de Netio que muestra los productos y servicios de la empresa">
-    </header>
-    <nav class="navH">
-      <a href="../index.html"><img class="navH--logo" src="../assets/icons/logo-netio.png" alt="logocomercial de Netio SRL"></a>
+    <nav class="navH sm-invisible">
+      <a href="../index.html"><img class="navH--logo" src="../assets/icons/logo-netio.png" alt="logo comercial de Netio SRL"></a>
       <ul class="navH__links">
         <li><button type="button" class="btn" ><a tabindex="-1" href="../index.html">Inicio</a></button></li>
         <li><div class="btn-group">
-          <button type="button" class="btn current"><a tabindex="-1" href="./productos.html">Productos</a></button>
-          <button type="button" class="btn dropdown-toggle dropdown-toggle-split " data-bs-toggle="dropdown"><span class="visually-hidden">Toggle Dropdown</span></button>
+          <button type="button" class="btn current"><a tabindex="-1" href="../pages/productos.html">Productos</a></button>
+          <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"><span class="visually-hidden">Toggle Dropdown</span></button>
           <ul class="dropdown-menu dropdown-menu-end navH__links__dropdownMenu">
-          <li><a class="dropdown-item" href="./productos.html#comunicadores">Comunicadores</a></li>
-          <li><a class="dropdown-item" href="./productos.html#vetti">Vetti</a></li>
-          <li><a class="dropdown-item" href="./productos.html#accesorios">Accesorios</a></li>
+          <li><a class="dropdown-item" href="../pages/productos.html#comunicadores">Comunicadores</a></li>
+          <li><a class="dropdown-item" href="../pages/productos.html#vetti">Vetti</a></li>
+          <li><a class="dropdown-item" href="../pages/productos.html#accesorios">Accesorios</a></li>
           </ul>
         </div></li>
-        <li><button type="button" class="btn"><a tabindex="-1" href="./comprar.html">Comprar</a></button></li>
+        <li><button type="button" class="btn"><a tabindex="-1" href="../pages/comprar.html">Comprar</a></button></li>
         <li><div class="btn-group">
-          <button type="button" class="btn"><a tabindex="-1" href="./soporte.html">Soporte</a></button>
-          <button type="button" class="btn dropdown-toggle dropdown-toggle-split " data-bs-toggle="dropdown"><span class="visually-hidden">Toggle Dropdown</span></button>
+          <button type="button" class="btn"><a tabindex="-1" href="../pages/soporte.html">Soporte</a></button>
+          <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"><span class="visually-hidden">Toggle Dropdown</span></button>
           <ul class="dropdown-menu dropdown-menu-end navH__links__dropdownMenu">
-          <li><a class="dropdown-item" href="./soporte.html#manuales">Manuales</a></li>
-          <li><a class="dropdown-item" href="./soporte.html#descargas">Descargas</a></li>
+          <li><a class="dropdown-item" href="../pages/soporte.html#manuales">Manuales</a></li>
+          <li><a class="dropdown-item" href="../pages/soporte.html#descargas">Descargas</a></li>
           </ul>
         </div></li>
-        <li><button type="button" class="btn"><a tabindex="-1" href="./contacto.html">Contacto</a></button></li>
+        <li><button type="button" class="btn"><a tabindex="-1" href="../pages/contacto.html">Contacto</a></button></li>
       </ul>
     </nav>
-    <nav class="navV navbar fixed-top">
+    <header>
+      <img class="banner" src="../assets/images/banner.png" alt="banner publicitario de Netio que muestra los productos y servicios de la empresa">
+    </header>
+    <nav class="navV navbar md-invisible lg-invisible">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navV-expand" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon navV--toggler"></span>
       </button>
       <div class="collapse navbar-collapse navV__container" id="navV-expand">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link navV--mainlink" href="../index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link navV--mainlink current" href="./productos.html">Productos</a></li>
-          <li class="nav-item"><a class="nav-link navV--sublink" href="./productos.html#comunicadores">Comunicadores</a></li>
-          <li class="nav-item"><a class="nav-link navV--sublink" href="./productos.html#vetti">Vetti</a></li>
-          <li class="nav-item"><a class="nav-link navV--sublink" href="./productos.html#accesorios">Accesorios</a></li>
-          <li class="nav-item"><a class="nav-link navV--mainlink" href="./comprar.html">Comprar</a></li>
-          <li class="nav-item"><a class="nav-link navV--mainlink" href="./soporte.html">Soporte</a></li>
-          <li class="nav-item"><a class="nav-link navV--sublink" href="./soporte.html#manuales">Manuales</a></li>
-          <li class="nav-item"><a class="nav-link navV--sublink" href="./soporte.html#descargas">Descargas</a></li>
-          <li class="nav-item"><a class="nav-link navV--mainlink" href="./contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link navV--mainlink current" href="../pages/productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link navV--sublink" href="../pages/productos.html#comunicadores">Comunicadores</a></li>
+          <li class="nav-item"><a class="nav-link navV--sublink" href="../pages/productos.html#vetti">Vetti</a></li>
+          <li class="nav-item"><a class="nav-link navV--sublink" href="../pages/productos.html#accesorios">Accesorios</a></li>
+          <li class="nav-item"><a class="nav-link navV--mainlink" href="../pages/comprar.html">Comprar</a></li>
+          <li class="nav-item"><a class="nav-link navV--mainlink" href="../pages/soporte.html">Soporte</a></li>
+          <li class="nav-item"><a class="nav-link navV--sublink" href="../pages/soporte.html#manuales">Manuales</a></li>
+          <li class="nav-item"><a class="nav-link navV--sublink" href="../pages/soporte.html#descargas">Descargas</a></li>
+          <li class="nav-item"><a class="nav-link navV--mainlink" href="../pages/contacto.html">Contacto</a></li>
         </ul>  
       </div>
     </nav>
@@ -62,38 +65,38 @@
       <section id="comunicadores"> <!-- comunicadores -->
         <h3>Comunicadores</h3>
         <p>Los comunicadores para alarmas permiten controlar cualquier panel de alarma, además de agregar funciones de domótica</p>
-        <div class="productos__galeria">
-          <div class="productos__galeria__item">
+        <div class="productos__galeria" data-aos="fade-up">
+          <div class="productos__galeria__item" data-aos="fade-up">
             <img src="../assets/images/productos/productos-ntlink-4g-5g.png" alt="comunicador NT-Link 4G/5G">
             <h4>NT-Link 4G/5G</h4>
             <p>Comunicador a bus de datos con conexión a red LTE-CatM1.</p>
           </div>
-          <div class="productos__galeria__item">
+          <div class="productos__galeria__item" data-aos="fade-up">
             <img src="../assets/images/productos/productos-ntlink-4g.png" alt="comunicador NT-Link 4G">
             <h4>NT-Link 4G</h4>
             <p>Comunicador a bus de datos con conexión a red 4G LTE-Cat1.</p>
           </div>
-          <div class="productos__galeria__item">
+          <div class="productos__galeria__item" data-aos="fade-up">
             <img src="../assets/images/productos/productos-wifi.png" alt="comunicador NT-Link WiFi">
             <h4>NT-Link WiFi</h4>
             <p>Comunicador a bus de datos con conexión a red WiFi local.</p>
           </div>
-          <div class="productos__galeria__item">
+          <div class="productos__galeria__item" data-aos="fade-up">
             <img src="../assets/images/productos/productos-ntcom2-4g.png" alt="comunicador NT-Com 2 4G">
             <h4>NT-Com 2 4G</h4>
             <p>Comunicador universal con conexión a red 4G LTE-Cat1.</p>
           </div>
-          <div class="productos__galeria__item">
+          <div class="productos__galeria__item" data-aos="fade-up">
             <img src="../assets/images/productos/productos-ntcom3-4g.png" alt="comunicador NT-Com 3 4G">
             <h4>NT-Com 3 4G</h4>
             <p>Comunicador universal con conexión a red 4G LTE-Cat1 y respaldo de línea telefónica.</p>
           </div>
-          <div class="productos__galeria__item">
+          <div class="productos__galeria__item" data-aos="fade-up">
             <img src="../assets/images/productos/productos-receptora.png" alt="receptora NT-RRL">
             <h4>NT-RRL</h4>
             <p>Receptora remota de líneas telefónicas.</p>
           </div>
-          <div class="productos__galeria__item">
+          <div class="productos__galeria__item" data-aos="fade-up">
             <img src="../assets/images/productos/productos-comunicadores-keybus.png" alt="tres comunicadores">
             <h4>NT-A2K8/4NG</h4>
             <p>Comunicadores dedicados al bus de datos de la linea de paneles Garnet A2K NG.</p>
@@ -101,19 +104,19 @@
         </div>
       </section>
       <section id="vetti"> <!-- vetti -->
-        <h3>Vetti</h3>
-        <img src="../assets/images/productos/bannerMonitoradawifi2021-completo.png" alt="productos de la marca vetti">
-        <a href="https://vetti.com.br/es/inicial/">Visite el sitio web oficial de Vetti para conocer todos sus productos.</a>
+        <h3 data-aos="fade-up">Vetti</h3>
+        <img data-aos="fade-up" src="../assets/images/productos/bannerMonitoradawifi2021-completo.png" alt="productos de la marca vetti">
+        <a data-aos="fade-up" href="https://vetti.com.br/es/inicial/">Visite el sitio web oficial de Vetti para conocer todos sus productos.</a>
       </section>
       <section id="accesorios"> <!-- accesorios -->
-        <h3>Accesorios</h3>
-        <div class="productos__galeria">
-          <div class="productos__galeria__item">
+        <h3 data-aos="fade-up">Accesorios</h3>
+        <div class="productos__galeria" data-aos="fade-up">
+          <div class="productos__galeria__item" data-aos="fade-up">
             <img src="../assets/images/productos/productos-accesorios.png" alt="cable de programación NT-CPROG y antena de 6dBi">
             <h4>NT-CPROG</h4>
             <p>Cable de programación.</p>
           </div>
-          <div class="productos__galeria__item">
+          <div class="productos__galeria__item" data-aos="fade-up">
             <img src="../assets/images/productos/productos-accesorios.png" alt="cable de programación NT-CPROG y antena de 6dBi">
             <h4>Antena 6dBi</h4>
           </div>
@@ -123,39 +126,41 @@
     <footer>
       <div class="footer__flex">
         <section>
-          <h4>Netio SRL</h4>
+          <h5>Netio SRL</h5>
           <ul>
             <li><b>Dir:</b> Donado 1045 (Piso 1) <br> (C1427CZE) CABA, Argentina</li>
             <li><b>Tel:</b> 54 11 4554 9997</li>
             <li><b>Email:</b> info@netio.com.ar</li>
           </ul>
           <br>
-          <h5>Horario de atención:</h5>
+          <h6>Horario de atención:</h6>
           <p>Lunes a Viernes de 09:00 a 17:00</p>
         </section>
         <hr>
         <section class="footer__flex__social">
-          <h4>Redes Sociales</h4>
+          <h5>Redes Sociales</h5>
           <ul>
             <li><a href="https://www.facebook.com/netio.com.ar" target="_blank"><img src="../assets/icons/facebook-nuevo.svg" alt="icono de facebook"></a></li>
             <li><a href="https://www.instagram.com/netiosrl/" target="_blank"><img src="../assets/icons/instagram.svg" alt="icono de instagram"></a></li>
             <li><a href="https://www.youtube.com/@netiosrl5506" target="_blank"><img src="../assets/icons/youtube-play.svg" alt="icono de youtube"></a></li>
           </ul>
         </section>
-        <hr class="footer__flex--lasthr">
-        <section class="footer__flex__sitemap">
-          <h4>Mapa del sitio</h4>
+        <hr class="sm-invisible">
+        <section class="footer__flex__sitemap sm-invisible">
+          <h5>Mapa del sitio</h5>
           <ul>
             <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./productos.html">Productos</a></li>
-            <li><a href="./comprar.html">Dónde comprar</a></li>
-            <li><a href="./soporte.html">Soporte</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="../pages/productos.html">Productos</a></li>
+            <li><a href="../pages/comprar.html">Dónde comprar</a></li>
+            <li><a href="../pages/soporte.html">Soporte</a></li>
+            <li><a href="../pages/contacto.html">Contacto</a></li>
           </ul>
         </section>
       </div>
     <p class="footer--copyright">© 2023 Netio SRL - Sitio web creado por Sebastian Maksemchuk</p>
-    </footer>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
   </body>
 </html>

@@ -1,0 +1,42 @@
+.soporte {
+  .soporte__manuales {
+    @extend %main-container;
+    a {
+      @include size ($h: auto, $maxw: 300px);
+      @media (max-width: 62em) {
+        @include size ($maxw: 200px);
+      }
+      img {
+        @include size (100%, auto);
+      }
+      transition: all 0.3s;
+      &:hover {
+        @include boxshadow (15px, $cl-sombras);
+        transform: scale(1.1)
+      }
+    }
+  }
+  .soporte__vetti {
+    a{
+      display: inline-block;
+    }
+  }
+  .soporte__descargas {
+    ul {
+      margin: 0 0 0 10%;
+      li {
+        text-align: start;
+        list-style: circle;
+        margin: 0.5em 0;
+      }
+    }
+    .soporte__descargas__appstores {
+      text-align: start;
+      li {
+        display: inline-block;
+        list-style: none;
+        margin: 0.5em;
+      }
+    }
+  }
+}

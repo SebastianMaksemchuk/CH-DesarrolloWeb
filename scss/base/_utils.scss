@@ -1,0 +1,62 @@
+@mixin size ($w: null, $h: null, $minw: null, $minh: null, $maxw: null, $maxh: null) {
+  width: $w;
+  height: $h;
+  min-width: $minw;
+  min-height: $minh;
+  max-width: $maxw;
+  max-height: $maxh;
+}
+
+@mixin flex ($direction: null, $wrap: null, $grow: null, $justify: null, $align: null, $gap: null) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  flex-grow: $grow;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap
+}
+
+@mixin grid ($rows, $columns, $justify: null, $align: null, $gap: null) {
+  display: grid;
+  justify-content: $justify;
+  align-items: $align;
+  grid-template-rows: $rows;
+  grid-template-columns: $columns;
+  gap: $gap;
+}
+
+@mixin boxshadow ($size, $color) {
+  box-shadow: 0 0 $size $color;
+}
+
+// media queries
+$smmin: 0em;
+$smmax: 36em;
+$mdmin: 36em;
+$mdmax: 48em;
+$lgmin: 48em;
+$lgmax: 10000em;
+
+$tam: (
+  "sm": (
+    min: $smmin,
+    max: $smmax,
+  ),
+  "md": (
+    min: $mdmin,
+    max: $mdmax,
+  ),
+  "lg": (
+    min: $lgmin,
+    max: $lgmax,
+  ),
+);
+
+@each $size, $value in $tam {
+  .#{$size}-invisible {
+    @media (min-width: map-get($value, min)) and (max-width: map-get($value, max)) {
+      display: none !important;
+    }
+  }
+}

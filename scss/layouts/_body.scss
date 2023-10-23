@@ -1,0 +1,4 @@
+body {
+  @include size (100%);
+  background: $cl-body url('./images/bg01.png');
+}

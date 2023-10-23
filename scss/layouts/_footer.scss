@@ -1,0 +1,41 @@
+footer {
+  padding: 0 1rem;
+  background: $cl-footer;
+  color: $cl-claro;
+  text-align: center;
+  h5 {
+    margin: 0.5rem 0;
+    text-decoration: underline;
+  }
+  h6, p {
+    margin: 0;
+  }
+  hr {
+    margin: 0 2.5%;
+  }
+  .footer__flex {
+    @include flex ($justify: space-around);
+    @media (min-width: 0em) and (max-width: 36em) {
+      @include flex ($direction: column, $gap: 0.5rem);
+    }
+    .footer__flex__social{
+      ul {
+      @include flex ($justify: space-around);
+      margin: 2rem;
+        li {
+          margin: 0 0.5rem;
+        }
+      }
+    }
+    .footer__flex__sitemap {
+      ul {
+        li {
+          margin: 0.3rem 0;
+        }
+      }
+    }
+  }
+  .footer--copyright {
+    margin: 0.5rem 0 0 0;
+  }
+}

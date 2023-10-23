@@ -1,0 +1,9 @@
+{
+  "name": "tercer-preentrega",
+  "version": "1.3.0",
+  "description": "tercer preentrega del proyecto para el curso Desarrollo Web de CoderHouse",
+  "main": "index.js",
+  "author": "Sebastian Maksemchuk",
+  "license": "ISC",
+  "repository": "https://github.com/SebastianMaksemchuk/CH-DesarrolloWeb"
+}

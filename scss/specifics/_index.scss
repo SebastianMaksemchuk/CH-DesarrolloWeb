@@ -1,0 +1,60 @@
+.index {
+  overflow-x:hidden;
+  section {
+    @extend %main-container;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    @include size (95%);
+    margin: 5rem 0 2rem 0;
+    @media (max-width: 62em) {
+      margin: 2rem 0 2rem 0;
+    }
+    &:nth-child(odd of section) {
+      margin: 5rem 5% 2rem 0;
+      border-radius: 0 5px 5px 0;
+    }
+    &:nth-child(even of section) {
+      flex-direction: row-reverse;
+      margin: 5rem 0 2rem 5%;
+      border-radius: 5px 0 0 5px;
+      text-align: end;
+    }
+    @media (max-width: 36em) {
+      &:nth-child(n of section) {
+        @include flex ($direction: column, $align:center);
+        @include size (90%);
+        margin: 2rem 5% 2rem 5%;
+        text-align: center;
+      }
+    }
+    img {
+      @include size (25%, auto);
+      align-self: flex-start;
+      border-radius: 8px;
+      position: relative;
+      bottom: 5rem;
+      @media (max-width: 62em) {
+        position: static;
+        align-self: center;
+      }
+      @media (max-width: 36em) {
+        @include size (50%, $minw: 150px);
+        align-self: center;
+        position: static;
+
+      }
+    }
+    &:hover {
+      img {
+        @include boxshadow (15px, $cl-sombras);
+      }
+    }
+    div {
+      @include flex ($direction: column, $justify: space-around);
+    }
+    a {
+      @include size (fit-content);
+      align-self: flex-end;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.productos {
+  .productos__galeria {
+    @extend %main-container;
+    .productos__galeria__item {
+      max-width: 280px;
+      background: #e0e0e0;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow: hidden;
+      @include boxshadow (15px, $cl-sombras);
+      &:hover {
+        @include boxshadow (15px, $cl-principal);
+        img {
+          transform: scale(1.25);
+        }
+      }
+    }
+  }
+  #vetti {
+    @include flex ($direction: column);
+    margin: 1rem 5% 2rem 5%;
+  }
+}
