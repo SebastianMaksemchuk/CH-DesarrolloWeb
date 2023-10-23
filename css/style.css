@@ -300,19 +300,30 @@ footer .footer--copyright {
   margin: 5rem 0 2rem 0;
   overflow: visible;
 }
-@media (max-width: 62em) {
-  .index section {
-    margin: 2rem 0 2rem 0;
-  }
-}
 .index section:nth-child(odd of section) {
   margin: 5rem 5% 2rem 0;
   border-radius: 0 5px 5px 0;
+}
+@media (max-width: 62em) {
+  .index section:nth-child(odd of section) {
+    margin: 2rem 5% 2rem 0;
+  }
+}
+.index section:nth-child(odd of section) div p {
+  text-align: start;
 }
 .index section:nth-child(even of section) {
   flex-direction: row-reverse;
   margin: 5rem 0 2rem 5%;
   border-radius: 5px 0 0 5px;
+  text-align: end;
+}
+@media (max-width: 62em) {
+  .index section:nth-child(even of section) {
+    margin: 2rem 0 2rem 5%;
+  }
+}
+.index section:nth-child(even of section) div p {
   text-align: end;
 }
 @media (max-width: 36em) {
@@ -321,7 +332,10 @@ footer .footer--copyright {
     flex-direction: column;
     align-items: center;
     width: 90%;
-    margin: 2rem 5% 2rem 5%;
+    margin: 2rem 5%;
+    text-align: center;
+  }
+  .index section:nth-child(n of section) div p {
     text-align: center;
   }
 }
@@ -334,7 +348,7 @@ footer .footer--copyright {
 }
 @media (max-width: 62em) {
   .index section img {
-    position: static;
+    transform: none;
     align-self: center;
   }
 }
@@ -342,8 +356,6 @@ footer .footer--copyright {
   .index section img {
     width: 50%;
     min-width: 150px;
-    align-self: center;
-    position: static;
   }
 }
 .index section:hover img {
