@@ -31,6 +31,10 @@ a:hover {
   text-decoration: none;
 }
 
+.aos-init[data-aos][data-aos].aos-animate {
+  transform: unset;
+}
+
 @media (min-width: 0em) and (max-width: 36em) {
   .sm-invisible {
     display: none !important;
@@ -130,6 +134,7 @@ footer .footer__flex {
 footer .footer__flex .footer__flex__social ul {
   display: flex;
   justify-content: space-around;
+  margin: 2rem;
 }
 footer .footer__flex .footer__flex__social ul li {
   margin: 0 0.5rem;
@@ -268,7 +273,7 @@ footer .footer--copyright {
   font-weight: bold;
 }
 
-.soporte .soporte__manuales, .productos .productos__galeria, .index section {
+.contacto #contact-form, .soporte .soporte__manuales, .productos .productos__galeria, .index section {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 0;
@@ -455,7 +460,7 @@ footer .footer--copyright {
 }
 
 .contacto section {
-  margin: 1rem 2.5%;
+  margin: 2rem 2.5%;
 }
 .contacto .contacto__medios {
   display: grid;
@@ -507,11 +512,16 @@ footer .footer--copyright {
   display: flex;
   flex-direction: column;
 }
+.contacto #contact-form {
+  display: block;
+}
 .contacto #contact-form p {
   text-align: left;
 }
+.contacto #contact-form form {
+  text-align: right;
+}
 .contacto #contact-form form input, .contacto #contact-form form select, .contacto #contact-form form #mensaje {
-  max-width: 20rem;
   text-align: left;
   border: #000000 solid 1px;
 }
@@ -520,7 +530,6 @@ footer .footer--copyright {
 }
 .contacto #contact-form form #mensaje {
   height: 10rem;
-  max-width: 40rem;
 }
 
 /*# sourceMappingURL=style.css.map */
