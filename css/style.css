@@ -171,11 +171,11 @@ footer .footer--copyright {
   border-radius: 3px;
   padding: 0.25rem;
   background: #eeeeee;
-  color: #5b5b5b;
+  color: #3c3c3c;
   border-color: #993333;
 }
 .navH .navH__links li button:hover, .navH .navH__links li button:focus-visible {
-  background: #5b5b5b;
+  background: #3c3c3c;
   color: #eeeeee;
   border-color: #993333;
 }
@@ -196,23 +196,23 @@ footer .footer--copyright {
   border-color: #993333;
 }
 .navH .navH__links li .current:focus-visible {
-  background: #5b5b5b;
+  background: #3c3c3c;
   color: #eeeeee;
   border-color: #993333;
 }
 .navH .navH__links .navH__links__dropdownMenu {
   background: #eeeeee;
-  color: #5b5b5b;
+  color: #3c3c3c;
   box-shadow: 0 0 10px #993333;
 }
 .navH .navH__links .navH__links__dropdownMenu a {
   background: #eeeeee;
-  color: #5b5b5b;
+  color: #3c3c3c;
   border-color: #993333;
   font-weight: bold;
 }
 .navH .navH__links .navH__links__dropdownMenu a:hover, .navH .navH__links .navH__links__dropdownMenu a:focus {
-  background: #5b5b5b;
+  background: #3c3c3c;
   color: #eeeeee;
   border-color: #993333;
   outline: none;
