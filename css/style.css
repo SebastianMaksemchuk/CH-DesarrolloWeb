@@ -398,6 +398,11 @@ footer .footer--copyright {
   flex-direction: column;
   margin: 1rem 5% 2rem 5%;
 }
+.productos #vetti img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
 
 .comprar p {
   margin: 1em 0;

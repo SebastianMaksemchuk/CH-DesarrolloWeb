@@ -23,5 +23,8 @@
   #vetti {
     @include flex ($direction: column);
     margin: 1rem 5% 2rem 5%;
+    img {
+      @include size (auto, auto, $maxw:100%)
+    }
   }
 }
