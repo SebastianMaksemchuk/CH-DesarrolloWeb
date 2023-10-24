@@ -1,4 +1,5 @@
 .banner {
   display: block;
   @include size (100%, auto);
+  aspect-ratio: 992 / 164.29;
 }

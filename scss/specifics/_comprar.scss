@@ -19,6 +19,7 @@
         width: 2rem;
         height: auto;
         justify-self: center;
+        aspect-ratio: 1 / 1;
       }
       .comprar__distribuidores__empresa--ciudad {
         grid-area: ciudad;
@@ -28,6 +29,7 @@
         width: 1rem;
         height: auto;
         justify-self: self-end;
+        aspect-ratio: 1 / 1;
       }
     }
   }

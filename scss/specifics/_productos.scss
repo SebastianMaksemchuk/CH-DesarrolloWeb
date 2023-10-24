@@ -8,6 +8,9 @@
       border-radius: 8px;
       overflow: hidden;
       @include boxshadow (15px, $cl-sombras);
+      img {
+        aspect-ratio: 1 / 1;
+      }
       &:hover {
         @include boxshadow (15px, $cl-principal);
         img {

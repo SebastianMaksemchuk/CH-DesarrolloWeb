@@ -135,6 +135,9 @@ footer .footer__flex .footer__flex__social ul {
 footer .footer__flex .footer__flex__social ul li {
   margin: 0 0.5rem;
 }
+footer .footer__flex .footer__flex__social ul li a img {
+  aspect-ratio: 1/1;
+}
 footer .footer__flex .footer__flex__sitemap ul li {
   margin: 0.3rem 0;
 }
@@ -146,6 +149,7 @@ footer .footer--copyright {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 992/164.29;
 }
 
 .navH {
@@ -338,6 +342,7 @@ footer .footer--copyright {
 .index section img {
   width: 25%;
   height: auto;
+  aspect-ratio: 1/1;
   align-self: flex-start;
   border-radius: 8px;
   transform: translateY(-5rem);
@@ -374,6 +379,9 @@ footer .footer--copyright {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 0 15px #000000;
+}
+.productos .productos__galeria .productos__galeria__item img {
+  aspect-ratio: 1/1;
 }
 .productos .productos__galeria .productos__galeria__item:hover {
   box-shadow: 0 0 15px #993333;
@@ -418,6 +426,7 @@ footer .footer--copyright {
   width: 2rem;
   height: auto;
   justify-self: center;
+  aspect-ratio: 1/1;
 }
 .comprar .comprar__distribuidores .comprar__distribuidores__empresa .comprar__distribuidores__empresa--ciudad {
   grid-area: ciudad;
@@ -427,6 +436,7 @@ footer .footer--copyright {
   width: 1rem;
   height: auto;
   justify-self: self-end;
+  aspect-ratio: 1/1;
 }
 .comprar .comprar--mapaUbicacion {
   width: 100%;
@@ -446,6 +456,7 @@ footer .footer--copyright {
 .soporte .soporte__manuales a img {
   width: 100%;
   height: auto;
+  aspect-ratio: 300/424.35;
 }
 .soporte .soporte__manuales a:hover {
   box-shadow: 0 0 15px #000000;
@@ -469,6 +480,9 @@ footer .footer--copyright {
   display: inline-block;
   list-style: none;
   margin: 0.5em;
+}
+.soporte .soporte__descargas .soporte__descargas__appstores li a img {
+  aspect-ratio: 150/44;
 }
 
 .contacto section {
@@ -523,6 +537,7 @@ footer .footer--copyright {
 .contacto .contacto__medios .bloque-contacto .contact-list {
   display: flex;
   flex-direction: column;
+  gap: 0.5em;
 }
 .contacto #contact-form {
   display: block;

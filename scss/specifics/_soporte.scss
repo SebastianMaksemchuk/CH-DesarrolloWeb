@@ -8,6 +8,7 @@
       }
       img {
         @include size (100%, auto);
+        aspect-ratio: 300 / 424.35;
       }
       transition: all 0.3s;
       &:hover {
@@ -36,6 +37,11 @@
         display: inline-block;
         list-style: none;
         margin: 0.5em;
+        a {
+          img {
+            aspect-ratio: 150 / 44;
+          }
+        }
       }
     }
   }

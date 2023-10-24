@@ -24,6 +24,11 @@ footer {
       margin: 2rem;
         li {
           margin: 0 0.5rem;
+          a {
+            img {
+              aspect-ratio: 1/1;
+            }
+          }
         }
       }
     }
