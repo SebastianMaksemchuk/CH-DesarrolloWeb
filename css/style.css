@@ -136,7 +136,8 @@ footer .footer__flex .footer__flex__social ul li {
   margin: 0 0.5rem;
 }
 footer .footer__flex .footer__flex__social ul li a img {
-  aspect-ratio: 1/1;
+  width: 48px;
+  height: 48px;
 }
 footer .footer__flex .footer__flex__sitemap ul li {
   margin: 0.3rem 0;
