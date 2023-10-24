@@ -26,7 +26,7 @@ footer {
           margin: 0 0.5rem;
           a {
             img {
-              aspect-ratio: 1/1;
+              @include size (48px, 48px)
             }
           }
         }
