@@ -388,7 +388,7 @@ footer .footer--copyright {
 }
 
 .comprar p {
-  margin-bottom: 2em;
+  margin: 1em 0;
 }
 .comprar .comprar__distribuidores {
   display: flex;
@@ -400,10 +400,12 @@ footer .footer--copyright {
 }
 .comprar .comprar__distribuidores .comprar__distribuidores__empresa {
   width: 200px;
-  max-height: auto;
+  height: 200px;
   margin: 1.25;
   overflow: hidden;
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-rows: 1fr 3rem;
   grid-template-columns: 2.5rem 1fr 1.5rem;
   grid-template-areas: "logo logo logo" "bandera ciudad mapa";
@@ -415,6 +417,7 @@ footer .footer--copyright {
   grid-area: bandera;
   width: 2rem;
   height: auto;
+  justify-self: center;
 }
 .comprar .comprar__distribuidores .comprar__distribuidores__empresa .comprar__distribuidores__empresa--ciudad {
   grid-area: ciudad;
