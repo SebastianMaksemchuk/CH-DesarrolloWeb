@@ -14,7 +14,7 @@
       .comprar__distribuidores__empresa--logo {
         grid-area: logo;
         img {
-          @include size ($maxw:200px);
+          @include size ($maxw:200px, $maxh:150px);
         }
       }
       .comprar__distribuidores__empresa--bandera {
