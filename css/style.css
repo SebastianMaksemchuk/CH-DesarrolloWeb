@@ -432,6 +432,7 @@ footer .footer--copyright {
 }
 .comprar .comprar__distribuidores .comprar__distribuidores__empresa .comprar__distribuidores__empresa--logo img {
   max-width: 200px;
+  max-height: 150px;
 }
 .comprar .comprar__distribuidores .comprar__distribuidores__empresa .comprar__distribuidores__empresa--bandera {
   grid-area: bandera;
