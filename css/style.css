@@ -382,6 +382,9 @@ footer .footer--copyright {
   box-shadow: 0 0 15px #000000;
 }
 .productos .productos__galeria .productos__galeria__item img {
+  width: 250px;
+  height: auto;
+  max-width: 75%;
   aspect-ratio: 1/1;
 }
 .productos .productos__galeria .productos__galeria__item:hover {
