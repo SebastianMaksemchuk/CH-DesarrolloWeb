@@ -425,6 +425,9 @@ footer .footer--copyright {
 .comprar .comprar__distribuidores .comprar__distribuidores__empresa .comprar__distribuidores__empresa--logo {
   grid-area: logo;
 }
+.comprar .comprar__distribuidores .comprar__distribuidores__empresa .comprar__distribuidores__empresa--logo img {
+  max-width: 200px;
+}
 .comprar .comprar__distribuidores .comprar__distribuidores__empresa .comprar__distribuidores__empresa--bandera {
   grid-area: bandera;
   width: 2rem;
@@ -486,7 +489,8 @@ footer .footer--copyright {
   margin: 0.5em;
 }
 .soporte .soporte__descargas .soporte__descargas__appstores li a img {
-  aspect-ratio: 150/44;
+  width: 150;
+  height: 44;
 }
 
 .contacto section {
@@ -537,6 +541,7 @@ footer .footer--copyright {
 }
 .contacto .contacto__medios .bloque-contacto img {
   width: 3rem;
+  height: 3rem;
 }
 .contacto .contacto__medios .bloque-contacto .contact-list {
   display: flex;

@@ -13,6 +13,9 @@
       grid-template-areas: "logo logo logo" "bandera ciudad mapa";
       .comprar__distribuidores__empresa--logo {
         grid-area: logo;
+        img {
+          @include size ($maxw:200px);
+        }
       }
       .comprar__distribuidores__empresa--bandera {
         grid-area: bandera;

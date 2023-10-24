@@ -39,7 +39,7 @@
         margin: 0.5em;
         a {
           img {
-            aspect-ratio: 150 / 44;
+            @include size (150, 44)
           }
         }
       }
