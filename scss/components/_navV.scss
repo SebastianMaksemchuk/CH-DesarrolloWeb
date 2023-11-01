@@ -3,26 +3,29 @@
   margin-left: auto;
   @include size (fit-content);
   position: fixed;
-  top: 0;
-  left: 50%;
+  top: 9.5%;
+  left: 5%;
   z-index: 3;
   transform: translateX(-50%);
   button {
-    background: $cl-claro;
+    background: $cl-masclaro;
     @include boxshadow (10px, $cl-principal);
     &:focus {
-      background: $cl-claro;
+      background: $cl-masclaro;
       @include boxshadow (10px, $cl-principal);
       outline: none;
+      span {
+        transform: skew(-50deg);
+      }
     }
     .navV--toggler {
       filter: invert(25%) sepia(21%) saturate(1686%) hue-rotate(313deg) brightness(113%) contrast(105%);
     }
   }
   .navV__container {
-    position: relative;
+    position: absolute;
     @include size (fit-content);
-    background-color: $cl-claro;
+    background-color: $cl-masclaro;
     border-radius: 2.5%;
     @include boxshadow (10px, $cl-principal);
     .navV--mainlink {

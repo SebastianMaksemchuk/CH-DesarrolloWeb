@@ -101,7 +101,7 @@
             <label for="form-email">Email</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="number" class="form-control" id="form-telefono" placeholder="Teléfono" required>
+            <input type="tel" class="form-control" id="form-telefono" placeholder="Teléfono" required>
             <label for="form-telefono">Teléfono</label>
           </div>
           <select class="form-select mb-3" name="motivo" id="motivo">
@@ -111,10 +111,10 @@
             <option value="consulta-tecnica" id="select-tecnica"><label for="select-tecnica">Consulta técnica</label></option>
           </select>
           <div class="form-floating mb-3">
-            <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Mensaje" required></textarea>
+            <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Mensaje" maxlength="500" required></textarea>
             <label for="mensaje">Mensaje</label>
           </div>
-          <button type="submit" class="btn btn-secondary" id="btn-enviar">Enviar</button>
+          <button type="submit" class="btn btn-secondary" id="btn-enviar" disabled>Enviar</button>
         </form>
       </section>
     </main>

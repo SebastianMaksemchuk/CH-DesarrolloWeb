@@ -53,7 +53,7 @@ h6, h5, h4, h3, h2, h1 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   text-align: center;
-  margin: 1rem 0;
+  margin: 1rem 2.5%;
 }
 
 h1 {
@@ -233,27 +233,30 @@ footer .footer--copyright {
   margin-left: auto;
   width: fit-content;
   position: fixed;
-  top: 0;
-  left: 50%;
+  top: 9.5%;
+  left: 5%;
   z-index: 3;
   transform: translateX(-50%);
 }
 .navV button {
-  background: #eeeeee;
+  background: #ffffff;
   box-shadow: 0 0 10px #993333;
 }
 .navV button:focus {
-  background: #eeeeee;
+  background: #ffffff;
   box-shadow: 0 0 10px #993333;
   outline: none;
+}
+.navV button:focus span {
+  transform: skew(-50deg);
 }
 .navV button .navV--toggler {
   filter: invert(25%) sepia(21%) saturate(1686%) hue-rotate(313deg) brightness(113%) contrast(105%);
 }
 .navV .navV__container {
-  position: relative;
+  position: absolute;
   width: fit-content;
-  background-color: #eeeeee;
+  background-color: #ffffff;
   border-radius: 2.5%;
   box-shadow: 0 0 10px #993333;
 }
