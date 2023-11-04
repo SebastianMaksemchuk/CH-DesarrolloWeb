@@ -22,10 +22,16 @@ p {
   font-family: $font-p;
 }
 
+main > p, section > p {
+  margin: 1em 2.5%;
+}
+
 a {
   font-family: $font-a;
+  color: $cl-enlaces;
 }
 
 a:hover {
   text-decoration: none;
+  color: scale-color($color: $cl-enlaces, $lightness: 25%)
 }

@@ -1,15 +1,16 @@
 .comprar {
-  p {
-    margin: 1em 0;
-  }
   .comprar__distribuidores {
     @include flex ($wrap: wrap, $justify: space-around, $align: center, $gap: 2rem);
-    margin: 0;
+    margin: 0 2.5%;
     .comprar__distribuidores__empresa {
       @include size (200px, 200px);
       margin: 1.25;
       overflow: hidden;
       @include grid ($columns: 2.5rem 1fr 1.5rem, $rows: 1fr 3rem, $justify: center, $align: center);
+      box-sizing: content-box;
+      border: solid 0.5px $cl-masclaro;
+      border-radius: 10%;
+      padding: 2px;
       grid-template-areas: "logo logo logo" "bandera ciudad mapa";
       .comprar__distribuidores__empresa--logo {
         grid-area: logo;

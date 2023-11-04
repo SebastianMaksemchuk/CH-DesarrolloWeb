@@ -20,7 +20,10 @@ h2 {
 }
 
 h3 {
-  @include titles (1.5rem, $cl-titulos)
+  @include titles (1.5rem, $cl-titulos);
+  margin-top: 2rem;
+  margin-bottom: -0.5rem;
+  text-decoration: underline;
 }
 
 h4 {
